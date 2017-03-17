@@ -1,0 +1,16 @@
+{
+  "name": "offlineapp",
+  "version": "1.0.0",
+  "description": "App to test extjs with a node server and offline features.",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.15.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Uge Hidalgo",
+  "license": "ISC"
+}
