@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "App to test extjs with a node server and offline features.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugeHidalgo/OffLineApp.git"
+  },
   "dependencies": {
     "express": "^4.15.2"
   },
