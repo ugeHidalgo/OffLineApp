@@ -3,18 +3,22 @@
   "version": "1.0.0",
   "description": "App to test extjs with a node server and offline features.",
   "main": "index.js",
+  "scripts": {
+    "start": "node .",
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "author": "Uge Hidalgo",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ugeHidalgo/OffLineApp.git"
   },
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.15.2",
+    "jasmine-node": "^1.14.5",
+    "request": "^2.81.0"
   },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node .",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "Uge Hidalgo",
-  "license": "ISC"
+  "devDependencies": {}
 }
+
+
