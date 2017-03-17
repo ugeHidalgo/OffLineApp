@@ -1,15 +1,17 @@
 ##OffLineApp
 
 This is a Progressive Web App used to investigate how to implement a progressive web app.
+
 The stack used includes:
 
-nodejs
-express
-Sencha ExtJS 6.5
+    * nodejs
+    * express
+    * Sencha ExtJS 6.5
 
 ___
 
 Install server side:
+
     cd server
     npm install
 
