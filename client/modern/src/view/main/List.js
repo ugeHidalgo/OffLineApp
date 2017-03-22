@@ -1,9 +1,6 @@
-/**
- * This view is an example list of people.
- */
 Ext.define('OffLineApp.view.main.List', {
-    extend: 'Ext.grid.Grid',
-    xtype: 'mainlist',    
+    extend: 'Ext.Panel',
+    xtype: 'mobilePersonnelList',    
 
     requires: [
         'OffLineApp.store.Personnel'
@@ -11,17 +8,26 @@ Ext.define('OffLineApp.view.main.List', {
 
     title: 'Personnel',
 
-    store: {
-        type: 'personnel'
+    config: {
+        scrollable: true
     },
-
-    columns: [
-        //'username', 'firstname', 'lastname', 'email', 'phone'
-        { text: 'User',  dataIndex: 'username', flex: 1 },
-        { text: 'Email', dataIndex: 'email', flex: 1 },        
-    ],
-
+    
     listeners: {
         select: 'onItemSelected'
-    }
+    },
+
+    initialize : function() {
+            var tpl = new Ext.XTemplate(                
+                '<h1>{firstname} {lastname}</h1>',
+                '<h4>{email}</h4>',
+                '<h2>{phone}</h2>'
+                );
+            var personnelList = Ext.create("Ext.List", {
+                itemId : 'Plist',
+                emptyText : 'Empty',
+                store : { type: 'personnel'},
+                itemTpl: tpl
+            });
+            this.add(personnelList);
+        }
 });

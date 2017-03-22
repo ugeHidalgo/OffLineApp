@@ -15,8 +15,7 @@ Ext.define('OffLineApp.view.main.List', {
         type: 'personnel'
     },
 
-    columns: [
-        //'username', 'firstname', 'lastname', 'email', 'phone'
+    columns: [        
         { text: 'User',  dataIndex: 'username' },
         { text: 'Name',  dataIndex: 'firstname' },
         { text: 'Last name',  dataIndex: 'lastname' },

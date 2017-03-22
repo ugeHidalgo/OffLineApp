@@ -9,6 +9,11 @@ Ext.define('OffLineApp.store.Personnel', {
         'username', 'firstname', 'lastname', 'email', 'phone'
     ],
 
+    proxy: {
+        type: 'rest',        
+        url: '/api/personnel'        
+    }
+
     /*data: { items: [
         { name: 'Jean Luc', email: "jeanluc.picard@enterprise.com", phone: "555-111-1111" },
         { name: 'Worf',     email: "worf.moghsson@enterprise.com",  phone: "555-222-2222" },
@@ -22,10 +27,5 @@ Ext.define('OffLineApp.store.Personnel', {
             type: 'json',
             rootProperty: 'items'
         }
-    }*/
-
-    proxy: {
-        type: 'rest',        
-        url: '/api/personnel'        
-    }
+    }*/    
 });
