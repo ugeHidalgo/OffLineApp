@@ -1,6 +1,6 @@
 Ext.define('OffLineApp.view.main.List', {
     extend: 'Ext.Panel',
-    xtype: 'mobilePersonnelList',    
+    xtype: 'mobilepersonnellist',    
 
     requires: [
         'OffLineApp.store.Personnel'

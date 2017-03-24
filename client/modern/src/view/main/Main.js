@@ -36,7 +36,7 @@ Ext.define('OffLineApp.view.main.Main', {
             layout: 'fit',
             // The following grid shares a store with the classic version's grid as well!
             items: [{
-                xtype: 'mobilePersonnelList'
+                xtype: 'mobilepersonnellist'
             }]
         },{
             title: 'Users',
