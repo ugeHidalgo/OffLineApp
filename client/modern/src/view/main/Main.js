@@ -34,19 +34,19 @@ Ext.define('OffLineApp.view.main.Main', {
             title: 'Home',
             iconCls: 'x-fa fa-home',
             layout: 'fit',
+            bind: {
+                html: '{loremIpsum}'
+            }          
+        },{
+            title: 'Personnel',
+            iconCls: 'x-fa fa-user',
             // The following grid shares a store with the classic version's grid as well!
             items: [{
                 xtype: 'mobilepersonnellist'
             }]
         },{
-            title: 'Users',
-            iconCls: 'x-fa fa-user',
-            bind: {
-                html: '{loremIpsum}'
-            }
-        },{
-            title: 'Groups',
-            iconCls: 'x-fa fa-users',
+            title: 'Orders',
+            iconCls: 'x-fa fa-building',
             bind: {
                 html: '{loremIpsum}'
             }
