@@ -3,7 +3,7 @@ Ext.define('OffLineApp.view.orders.List', {
     xtype: 'orderslist',
 
     requires: [
-        'OffLineApp.store.Personnel'
+        'OffLineApp.store.Order'
     ],
 
     title: 'Orders',

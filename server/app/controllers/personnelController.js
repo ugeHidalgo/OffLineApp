@@ -10,7 +10,7 @@
                 if (error) {
                     response.status(400).send(error);
                 } else {
-                    console.log ('Persoonel loaded !!');
+                    console.log ('Personnel loaded !!');
                     response.set('Content-Type','application/json');
                     response.send(personnel);                        
                 }

@@ -15,6 +15,10 @@ Ext.define('OffLineApp.view.main.List', {
         type: 'personnel'
     },
 
+    config: {
+        scrollable: true
+    },
+
     columns: [        
         { text: 'User',  dataIndex: 'username' },
         { text: 'Name',  dataIndex: 'firstname' },

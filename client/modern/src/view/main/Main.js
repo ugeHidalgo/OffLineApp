@@ -14,7 +14,8 @@ Ext.define('OffLineApp.view.main.Main', {
 
         'OffLineApp.view.main.MainController',
         'OffLineApp.view.main.MainModel',
-        'OffLineApp.view.main.List'
+        'OffLineApp.view.main.List',
+        'OffLineApp.view.orders.List'
     ],
 
     controller: 'main',
@@ -46,10 +47,10 @@ Ext.define('OffLineApp.view.main.Main', {
             }]
         },{
             title: 'Orders',
-            iconCls: 'x-fa fa-building',
-            bind: {
-                html: '{loremIpsum}'
-            }
+            iconCls: 'fa-building',
+            items: [{
+                xtype: 'mobileorderlist'
+            }],
         },{
             title: 'Settings',
             iconCls: 'x-fa fa-cog',

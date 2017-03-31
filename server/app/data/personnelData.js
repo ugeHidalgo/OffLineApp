@@ -4,7 +4,7 @@
         var mongoose = require ('mongoose'),
             Person = require ('../models/person');
         
-        personnelData.getPersonnel = function () {
+        personnelData.getPersonnel = function (callbackFn) {
             Person.find({}, callbackFn);
         }
 
