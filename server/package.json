@@ -14,11 +14,12 @@
     "url": "git+https://github.com/ugeHidalgo/OffLineApp.git"
   },
   "dependencies": {
+    "body-parser": "^1.17.1",
     "express": "^4.15.2",
     "jasmine-node": "^1.14.5",
+    "mongodb": "^2.2.25",
+    "mongoose": "^4.9.2",
     "request": "^2.81.0"
   },
   "devDependencies": {}
 }
-
-

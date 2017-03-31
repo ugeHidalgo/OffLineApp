@@ -1,9 +1,11 @@
 (function (data){
 
-    var personnelData = require ('./personnelData');
-    var orderData = require ('./orderData');
+    var PersonnelData = require ('./personnelData'),
+        OrderData = require ('./orderData'),           
+        SeedTools = require ('./seedTools');
 
-    personnelData.init();
-    orderData.init();
+    PersonnelData.init();
+    OrderData.init();    
+    SeedTools.seedDataBase();
 
 })(module.exports);

@@ -4,14 +4,18 @@
         
     orderController.init = function (app) {        
 
-        app.get('/api/order', function(request, response){            
-
-            var orderList = orderData.getOrderList ();
-            console.log ('Order list loaded !!');
-            response.set('Content-Type','application/json');
-            response.send(orderList);                        
+        app.get('/api/orders', function(request, response){            
+            
+            orderData.getOrders (function (error, orders) {
+                if (error) {
+                    response.status(400).send(error);
+                } else {
+                    console.log ('Order list loaded !!');
+                    response.set('Content-Type','application/json');
+                    response.send(orders);                        
+                }
+            });            
         });
-        
-    };
 
+    };
 })(module.exports);

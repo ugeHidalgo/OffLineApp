@@ -9,11 +9,11 @@ Ext.define('OffLineApp.store.Order', {
         {name: 'orderId', type: 'string'},
         {name: 'description', type: 'string'},
         {name: 'amount', type: 'int'},
-        {name: 'payment', type: 'boolean', defaultValue: true}
+        {name: 'payment', type: 'boolean', defaultValue: false}
     ],
 
     proxy: {
         type: 'rest',        
-        url: '/api/order'        
+        url: '/api/orders'        
     }    
 });

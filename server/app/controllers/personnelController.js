@@ -6,12 +6,16 @@
 
         app.get('/api/personnel', function(request, response){            
 
-            var personnelList = personnelData.getPersonnelList ();
-            console.log ('Personnel list loaded !!');
-            response.set('Content-Type','application/json');
-            response.send(personnelList);                        
+            personnelData.getPersonnel (function (error, personnel) {
+                if (error) {
+                    response.status(400).send(error);
+                } else {
+                    console.log ('Persoonel loaded !!');
+                    response.set('Content-Type','application/json');
+                    response.send(personnel);                        
+                }
+            });                         
         });
         
     };
-
 })(module.exports);
