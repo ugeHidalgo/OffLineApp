@@ -15,8 +15,8 @@ Ext.define('OffLineApp.view.main.Main', {
 
         'OffLineApp.view.main.MainController',
         'OffLineApp.view.main.MainModel',
-        'OffLineApp.view.main.List',
-        'OffLineApp.view.orders.List'
+        'OffLineApp.view.main.PersonnelList',
+        'OffLineApp.view.main.OrdersList'
     ],
 
     controller: 'main',
@@ -87,7 +87,7 @@ Ext.define('OffLineApp.view.main.Main', {
         iconCls: 'fa-user',
         // The following grid shares a store with the classic version's grid as well!
         items: [{
-            xtype: 'mainlist'
+            xtype: 'personnellist'
         }]        
     }, {
         title: 'Orders',

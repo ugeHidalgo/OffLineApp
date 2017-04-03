@@ -14,8 +14,8 @@ Ext.define('OffLineApp.view.main.Main', {
 
         'OffLineApp.view.main.MainController',
         'OffLineApp.view.main.MainModel',
-        'OffLineApp.view.main.List',
-        'OffLineApp.view.orders.List'
+        'OffLineApp.view.main.PersonnelList',
+        'OffLineApp.view.main.OrdersList'
     ],
 
     controller: 'main',

@@ -1,4 +1,4 @@
-Ext.define('OffLineApp.view.orders.List', {
+Ext.define('OffLineApp.view.main.OrdersList', {
     extend: 'Ext.grid.Panel',
     xtype: 'orderslist',
 

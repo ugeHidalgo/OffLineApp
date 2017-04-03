@@ -1,4 +1,4 @@
-Ext.define('OffLineApp.view.main.List', {
+Ext.define('OffLineApp.view.main.PersonnelList', {
     extend: 'Ext.Panel',
     xtype: 'mobilepersonnellist',    
 

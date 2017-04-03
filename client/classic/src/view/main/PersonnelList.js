@@ -1,9 +1,9 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('OffLineApp.view.main.List', {
+Ext.define('OffLineApp.view.main.PersonnelList', {
     extend: 'Ext.grid.Panel',
-    xtype: 'mainlist',
+    xtype: 'personnellist',
 
     requires: [
         'OffLineApp.store.Personnel'
