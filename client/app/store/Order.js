@@ -13,7 +13,8 @@ Ext.define('OffLineApp.store.Order', {
     ],
 
     proxy: {
-        type: 'rest',        
-        url: '/api/orders'        
+        // @sw-cache
+        url: '/api/orders',
+        type: 'rest'
     }    
 });

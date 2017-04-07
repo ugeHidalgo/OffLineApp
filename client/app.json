@@ -42,7 +42,27 @@
      */
     "framework": "ext",
     
-    
+    "progressive": {
+        "manifest": {
+            "name": "Orders",
+            "short_name": "Order lines",
+            "icons": [{
+                "src": "resources/icon-small.png",
+                "sizes": "96x96"
+            }, {
+                "src": "resources/icon-medium.png",
+                "sizes": "192x192"
+            }, {
+                "src": "resources/icon-large.png",
+                "sizes": "256x256"
+            }],
+            "theme_color": "#054059",
+            "background_color": "#054059",
+            "display": "standalone",
+            "orientation": "portrait",
+            "start_url": "/index.html"
+        }
+    },
     
     
     /**
@@ -294,7 +314,7 @@
          //   - other: a string (such as the build.timestamp shown here) to allow
          //     requests to be cached for this build.
          //
-         "cache": false,
+         "cache": true,
 
          // When "cache" is not true, this value is the request parameter used
          // to control caching.
@@ -313,7 +333,7 @@
             }
         },
         "loader": {
-            "cache": "${build.timestamp}"
+            "cache": true
         },
         "cache": {
             "enable": true

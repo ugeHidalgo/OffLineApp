@@ -10,7 +10,8 @@ Ext.define('OffLineApp.store.Personnel', {
     ],
 
     proxy: {
-        type: 'rest',        
-        url: '/api/personnel'        
+        // @sw-cache
+        url: '/api/personnel',
+        type: 'rest'
     }    
 });

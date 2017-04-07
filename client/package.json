@@ -1,0 +1,20 @@
+{
+  "name": "offlineapp",
+  "version": "1.0.0",
+  "description": "App to test extjs with a node server and offline features.",
+  "main": "index.html",
+  "scripts": {
+    "start": "node .",
+    "test": "./node_modules/.bin/jasmine-node spec"
+  },
+  "author": "Uge Hidalgo",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ugeHidalgo/OffLineApp.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "sw-precache": "^5.1.0"
+  }
+}

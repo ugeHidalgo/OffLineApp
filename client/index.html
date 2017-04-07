@@ -44,6 +44,14 @@
             //};
         };
     </script>
+
+    <script>
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('build/production/offlineapp/sw.js').then(function() { 
+                console.log("Service Worker Registered"); 
+            });
+        }
+    </script>
     
     
     <!-- The line below must be kept intact for Sencha Cmd to build your application -->
